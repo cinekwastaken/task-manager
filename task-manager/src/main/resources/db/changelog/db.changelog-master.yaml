@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: db/changelog/001-create-users-table.yaml
+  - include:
+      file: db/changelog/002-create-tasks-table.yaml
+  - include:
+      file: db/changelog/003-add-version-to-tasks.yaml

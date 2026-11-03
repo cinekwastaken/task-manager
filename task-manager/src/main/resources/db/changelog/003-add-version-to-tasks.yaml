@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-add-version-to-tasks
+      author: Cinek
+      changes:
+        - addColumn:
+            tableName: tasks
+            columns:
+              - column:
+                  name: version
+                  type: BIGINT
+                  valueNumeric: 0
+                  constraints:
+                    nullable: false
